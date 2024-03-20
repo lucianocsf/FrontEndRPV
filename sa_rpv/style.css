@@ -1,105 +1,59 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+:root{
+    /* color */
+    --main-bg-color: black;
+    --main-text-color: #fff;
+    --main-grey-color: #222;
+    --main-red-color: #f40612;
+    --secondary-grey-color: #303030;
+
+    /* font-size */
+
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --fs-24: 24px;
+    --fs-26: 26px;
+    --fs-28: 28px;
+    --fs-32: 32px;
+    --fs-40: 40px;
+    --fs-48: 48px;
+    --fs-64: 64px;
 }
 
-.bannerHeader {
-  background-color: black ;
-  color: greenyellow;
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 2px;
+body{
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: "Roboto", sans-serif;
 }
 
-.menu {
-    display: flex;
-    background-color: gray;
-    color: aliceblue;
-    justify-content: space-between;
-    /* position: fixed; */
-    width: 100%;
-    top: 0px;
-}
-.logo {
-    font-size: 1.5em;
+h1 {
+    font-size: var(--fs-28);
+    font-weight: 600;
 }
 
-.navBar ul {
-    list-style: none;
-    display: flex;
-
-}
-
-.navBar li {
-   margin-right: 20px;
-}
-
-.navBar a {
-    color: white;
-    text-decoration: none;
-    border-radius: 0px 10px 0px 10px;
-    padding: 10px;
-    background-color: black;
-}
-
-.navBar a:hover {
-    color: greenyellow;
-    font-size: 20px;
-}
-
-.bannerCards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
+h2, h3 {
+    font-size: var(--fs-18);
+    font-weight: 400;
 
 }
 
-.bannerCard {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+h5 {
+    font-size: var(--fs-16);
+    font-weight: 600;
 }
 
-.bannerCard:hover{
-    background-color:yellowgreen;
+/* bootstrap */
+
+.btn {
+    border-radius: 0;
+    padding: 8px 16px;
 }
 
-.footer {
-    display: flex;
-    background-color: black;
-    color: white;
+.btn-danger{
+    background: var(--main-red-color);
 }
 
-.footer div {
-   padding: 10px;
-   margin-left: 80px;
-
-}
-
-.img {
-    width: 30px;
-    height: 30px;
-    margin-left: 80px;
-    display: flex;
-    margin-top: 50px;
-}
-
-.footer div p {
-    display: block;
-}
-
-.carrossel{
-    margin-left: 400px;
-    width: 50%;
-}
-
-.pN {
-    margin-top: 50px;
-    align-items: start;
-}
-
-.footer div {
-    margin-left: 0px;
+.btn h2 {
+    font-weight: 400;
+    margin: 0;
 }
