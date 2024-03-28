@@ -1,0 +1,8 @@
+.header {
+    display: flex;
+    color: white;
+    justify-content: center;
+    height: 80px;
+    padding: 32px;
+    background-color: blueviolet;
+}
