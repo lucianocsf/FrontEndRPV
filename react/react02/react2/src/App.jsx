@@ -1,46 +1,33 @@
-// import { Header } from './componentes/Header'
-import {Routes, Route} from 'react-router-dom';
-import { Home }from './Home';
-import { About } from './About';
-import './styles.global.css';
+import {Routes, Route} from "react-router-dom"
+import { Footer } from "./atvReact/Footer"
+import { Header } from "./atvReact/Header"
+import { SectionHome } from "./atvReact/SectionHome"
+import { SectionMis } from "./atvReact/SectionMis"
+import { SectionProd } from "./atvReact/SectionProd"
+import { SectionCont } from "./atvReact/SectionCont"
+import { SectionHistory } from "./atvReact/SectionHistory"
 
 function App() {
-
-
   return (
-
-   <div>
-    <header>
-      <h1>Meu Site</h1>
-    </header>
-    <hr />
-    <hr />
-
     <div>
+      <Header 
+/>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/sobre' element={<About />} />
-
-
+        <Route path='/' element={<SectionHome />}>
+        </Route>
+        <Route path='/SectionHome' element={<SectionHome titulo='Teste'/>}>
+        </Route>
+        <Route path='/SectionMis' element={<SectionMis titulo='Missão'/>}>
+        </Route>
+        <Route path='/SectionProd' element={<SectionProd titulo='Produtos'/>}>
+        </Route>
+        <Route path='/SectionHistory' element={<SectionHistory titulo='Historia'/>}>
+        </Route>
+        <Route path='/SectionCont' element={<SectionCont titulo='Contato'/>}>
+        </Route>
       </Routes>
+ <Footer />
     </div>
-    <hr />
-    <hr />
-
-    <footer>
-      <h2>Contato</h2>
-    </footer>
-   </div>
-
-
-
-  //  <div>
-  //   <Header nomeCliente='Luciano' cidadeCliente='Cataguases' ufCliente='MG' />
-  //   <Header nomeCliente='Luciano' cidadeCliente='Cataguases' ufCliente='MG' />
-  //   <Pagina2 />
-  //   <Pagina3 />
-  //   <Footer />
-  // </div>
   )
 }
 

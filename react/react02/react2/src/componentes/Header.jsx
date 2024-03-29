@@ -7,6 +7,7 @@ export function Header(props) {
 
         <header className={styles.header}>
              <strong>Introdução React</strong> 
+             
              <p>{props.nomeCliente} <br/>
              {props.cidadeCliente}
              {props.ufCliente}
